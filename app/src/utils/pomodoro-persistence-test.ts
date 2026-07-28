@@ -21,6 +21,8 @@ export const testPomodoroPersistence = () => {
     currentTaskId: 'test-task-1',
     startedAt: Date.now(),
     pausedAt: null,
+    totalPausedTime: 0,
+    overtimeAutoPaused: null,
   };
   
   console.log('📝 Saving test state:', testState);
@@ -53,6 +55,8 @@ export const testPomodoroPersistence = () => {
     currentTaskId: 'test-task-2',
     startedAt: Date.now() - 30 * 60 * 1000,
     pausedAt: null,
+    totalPausedTime: 0,
+    overtimeAutoPaused: null,
   };
   
   console.log('⏰ Testing overdue session recovery...');
@@ -88,6 +92,8 @@ export const testPageRefreshScenario = () => {
     currentTaskId: 'refresh-test-task',
     startedAt: startTime,
     pausedAt: null,
+    totalPausedTime: 0,
+    overtimeAutoPaused: null,
   };
   
   console.log('📝 Starting session at:', new Date(startTime).toLocaleTimeString());

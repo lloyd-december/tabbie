@@ -35,7 +35,7 @@ const ONBOARDING_FORCE_SHOW_KEY = 'tabbie_onboarding_force_show';
 function AppContent() {
   const { userData } = useTodo();
   const { setThemeMode } = useDarkMode();
-  const [currentPage, setCurrentPage] = React.useState<'dashboard' | 'tasks' | 'reminders' | 'events' | 'notifications' | 'pomodoro' | 'notes' | 'activity' | 'timetracking' | 'settings' | 'tabbie' | 'schedule'>('dashboard');
+  const [currentPage, setCurrentPage] = React.useState<'dashboard' | 'tasks' | 'reminders' | 'events' | 'notifications' | 'pomodoro' | 'notes' | 'activity' | 'timetracking' | 'settings' | 'tabbie' | 'schedule' | 'yourtabbie' | 'calendar'>('dashboard');
   const [currentView, setCurrentView] = React.useState<'today' | 'tomorrow' | 'next7days' | 'completed' | string>('next7days');
   const [showOnboarding, setShowOnboarding] = React.useState(false);
 
