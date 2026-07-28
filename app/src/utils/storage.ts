@@ -182,6 +182,7 @@ export const loadUserData = (): UserData => {
     pomodoroSessions: [],
     notes: { global: '', categories: {} },
     settings: DEFAULT_SETTINGS,
+    timeBlocks: [],
   };
 };
 

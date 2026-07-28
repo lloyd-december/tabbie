@@ -21,7 +21,7 @@ interface ActivityStats {
 
 interface DashboardPageProps {
   onNavigateToActivity?: () => void;
-  onPageChange?: (page: 'dashboard' | 'tasks' | 'reminders' | 'events' | 'notifications' | 'pomodoro' | 'activity' | 'timetracking' | 'settings' | 'tabbie') => void;
+  onPageChange?: (page: 'dashboard' | 'tasks' | 'reminders' | 'events' | 'notifications' | 'pomodoro' | 'notes' | 'activity' | 'timetracking' | 'settings' | 'tabbie' | 'schedule' | 'yourtabbie') => void;
   theme?: 'clean' | 'retro';
 }
 

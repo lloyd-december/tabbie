@@ -51,7 +51,7 @@ export function AnimationStreamingTest() {
   const [error, setError] = useState<string>('');
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationFrameRef = useRef<number>();
+  const animationFrameRef = useRef<number | undefined>(undefined);
   const lastFrameTimeRef = useRef<number>(0);
   const streamingIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
